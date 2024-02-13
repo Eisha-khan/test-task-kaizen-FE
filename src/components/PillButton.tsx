@@ -4,17 +4,11 @@ type Props = {
   title?: string;
   onClick: () => void;
   disabled?: boolean;
-  imageSrc?: string;
+  Icon?: React.ReactNode;
   cutomClassName?: string;
 };
 
-function PillButton({
-  title,
-  onClick,
-  disabled,
-  imageSrc,
-  cutomClassName,
-}: Props) {
+function PillButton({ title, onClick, disabled, Icon, cutomClassName }: Props) {
   return (
     <button
       onClick={onClick}
@@ -25,7 +19,7 @@ function PillButton({
       )}
     >
       {title && <h4>{title}</h4>}
-      {imageSrc && <img src={imageSrc} width={25} height={25} />}
+      {Icon}
     </button>
   );
 }

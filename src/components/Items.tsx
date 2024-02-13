@@ -1,3 +1,4 @@
+import { RectangleGroupIcon } from "@heroicons/react/24/outline";
 import ItemsTable from "./ItemsTable";
 import PillButton from "./PillButton";
 
@@ -23,11 +24,7 @@ function Items() {
 
         <div className="flex-[0.5]">
           <div className="flex items-center p-3">
-            <img
-              src="https://icons.veryicon.com/png/o/file-type/file-icon-collection/operation-item-registration.png"
-              width={25}
-              height={25}
-            />
+            <RectangleGroupIcon className="icon text-gray-500" />
             <h4 className="ml-32 text-gray-500">Total Categories</h4>
             <h4 className="ml-auto mr-16 text-gray-500">4</h4>
           </div>
@@ -35,11 +32,7 @@ function Items() {
           <div className="h-[1px] w-full bg-gray-200" />
 
           <div className="flex items-center p-3">
-            <img
-              src="https://icons.veryicon.com/png/o/file-type/file-icon-collection/operation-item-registration.png"
-              width={25}
-              height={25}
-            />
+            <RectangleGroupIcon className="icon text-gray-500" />
             <h4 className="ml-32 text-gray-500">Total Items</h4>
             <h4 className="ml-auto mr-16 text-gray-500">21</h4>
           </div>
